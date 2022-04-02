@@ -6,7 +6,7 @@ Creación de página de producto de e-commerce que consume una API de Shopify y 
 - Abrir el archivo index.html en tu navegador preferido.
 - Realiza acciones de cambiar color, talla y agregar al carrito.
 
-##Tecnologias usadas
+## Tecnologias usadas
 - HTML5
 - CSS
 - JavaScript
