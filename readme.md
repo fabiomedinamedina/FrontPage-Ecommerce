@@ -1,4 +1,4 @@
-#FrontEnd de producto e-commerce :boom:
+# FrontEnd de producto e-commerce :boom:
 Creación de página de producto de e-commerce que consume una API de Shopify y genera el HTML dinamico a traves de JavaScript de un diseño preestablecido.
 
 ## Instalación y pruebas
