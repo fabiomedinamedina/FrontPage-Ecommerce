@@ -32,15 +32,7 @@
           <div class="slider_product_container">
             <div class="swiper full_slide">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-              </div>
+              
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -49,15 +41,7 @@
           
           <div thumbsSlider="" class="swiper thumbs_slide">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-              </div>
+              
             </div>
           </div>
           </div>
@@ -65,54 +49,20 @@
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
           <div class="information_product_container">
             <div class="vendor_product">
-              <p>By <a href="#">Nike x ALYX</a></p>
+              <p>By <a href="#" id="vendor_name"></a></p>
             </div>
             <div class="title_product">
-              <h1>Free Trainer 3 / MMW</h1>
+              <h1 id="title_product_name"></h1>
             </div>
             <div class="price_product">
-              <p>&#36; <span class="price_sale" id="price_product">258.34</span> <span class="full_price">$370.00</span></p>
+              <p>&#36;<span class="price_sale" id="price_product" data-price=""></span> <span class="full_price" id="full_price_product"></span></p>
             </div>
             <form action="" class="form_wrapper_product_attributes">
-              <div class="container_product_atributtes">
-                <div class="variant_inputs inputs_color">
-                  <label for="color-options" class="title_fieldset">Color:</label>
-                  <fieldset class="variant_input_wrapper inputs_color" id="color-options">
-                    <div class="variant_input" data-value="red">
-                      <input type="radio" name="color" id="color-red" checked value="red">
-                      <label for="color-red" data-color="red"></label>
-                    </div>
-                    <div class="variant_input" data-value="red">
-                      <input type="radio" name="color" id="color-black" value="black">
-                      <label for="color-black" data-color="black"></label>
-                    </div>
-                    <div class="variant_input" data-value="red">
-                      <input type="radio" name="color" id="color-white" value="white">
-                      <label for="color-white" data-color="white"></label>
-                    </div>
-                  </fieldset>
-                </div>
-                <div class="variant_inputs">
-                  <label for="size-options"  class="title_fieldset">Size:</label>
-                  <fieldset class="variant_input_wrapper inputs_normal" id="size-options">
-                    <div class="variant_input" data-value="red">
-                      <input type="radio" name="size" id="size-7" checked>
-                      <label for="size-7">7</label>
-                    </div>
-                    <div class="variant_input" data-value="red">
-                      <input type="radio" name="size" id="size-7/5">
-                      <label for="size-7/5">7.5</label>
-                    </div>
-                    <div class="variant_input" data-value="red">
-                      <input type="radio" name="size" id="size-8">
-                      <label for="size-8">8</label>
-                    </div>
-                    <div class="variant_input" data-value="red">
-                      <input type="radio" name="size" id="size-9">
-                      <label for="size-9">9</label>
-                    </div>
-                  </fieldset>
-                </div>
+              <div class="container_product_atributtes" id="container_product_atributtes">
+                
+               
+              </div>
+              <div class="qyt_container">
                 <div class="qty_product">
                   <div class="input_qty">
                     <input type="text" id="qty_product_item" class="input_qty_product" value="1" min="1" aria-label="quantity" pattern="[0-9]*" name="quantity">
@@ -124,7 +74,7 @@
                     </button>
                   </div>
                   <div class="total_product">
-                    <p>Total price: <span id="price_total">$570.00</span></p>
+                    <p>Total price: <span id="price_total"></span></p>
                   </div>
                 </div>
               </div>
@@ -133,7 +83,7 @@
                 <button type="submit" id="submit_add_to_cart" class="btn_primary">Add to cart</button>
               </div>
             </form>
-            <div class="description_product">
+            <div class="description_product" id="desc_product">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
@@ -149,6 +99,7 @@
     </div>
   </div>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="assents/js/fetchProduct.js"></script>
   <script src="assents/js/script.js"></script>
 </body>
 </html>

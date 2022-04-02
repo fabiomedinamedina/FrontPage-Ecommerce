@@ -322,7 +322,7 @@ a{
   cursor: pointer;
 }
 
-.variant_input_wrapper.inputs_normal .variant_input input[type=radio]:checked+label{
+.variant_input_wrapper.inputs_size .variant_input input[type=radio]:checked+label{
   border: 0.2rem solid var(--c-primary);
   color: var(--c-primary);
 }
@@ -441,7 +441,8 @@ label[data-color="black"]{
 }
 
 .description_product,
-.description_product p{
+.description_product p,
+.description_product span{
   font-size: 1.2rem;
   color: var(--c-primary-middle);
 }
