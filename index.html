@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assents/css/style.css" type="text/css">
   <link rel="stylesheet" href="assents/css/flexboxgrid.min.css" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 <body>
   <div id="main">
@@ -29,7 +30,36 @@
       <div class="row container_product">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
           <div class="slider_product_container">
-
+            <div class="swiper full_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+          
+          <div thumbsSlider="" class="swiper thumbs_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+            </div>
+          </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -41,30 +71,30 @@
               <h1>Free Trainer 3 / MMW</h1>
             </div>
             <div class="price_product">
-              <p>&#36; <span class="price_sale">258.34</span> <span class="full_price">$370.00</span></p>
+              <p>&#36; <span class="price_sale" id="price_product">258.34</span> <span class="full_price">$370.00</span></p>
             </div>
             <form action="" class="form_wrapper_product_attributes">
               <div class="container_product_atributtes">
                 <div class="variant_inputs inputs_color">
                   <label for="color-options" class="title_fieldset">Color:</label>
-                  <fieldset class="variant_input_wrapper inputs_color" name="color" id="color-options">
+                  <fieldset class="variant_input_wrapper inputs_color" id="color-options">
                     <div class="variant_input" data-value="red">
-                      <input type="radio" name="color" id="color-red" checked>
+                      <input type="radio" name="color" id="color-red" checked value="red">
                       <label for="color-red" data-color="red"></label>
                     </div>
                     <div class="variant_input" data-value="red">
-                      <input type="radio" name="color" id="color-black">
+                      <input type="radio" name="color" id="color-black" value="black">
                       <label for="color-black" data-color="black"></label>
                     </div>
                     <div class="variant_input" data-value="red">
-                      <input type="radio" name="color" id="color-white">
+                      <input type="radio" name="color" id="color-white" value="white">
                       <label for="color-white" data-color="white"></label>
                     </div>
                   </fieldset>
                 </div>
                 <div class="variant_inputs">
                   <label for="size-options"  class="title_fieldset">Size:</label>
-                  <fieldset class="variant_input_wrapper inputs_normal" name="size" id="size-options">
+                  <fieldset class="variant_input_wrapper inputs_normal" id="size-options">
                     <div class="variant_input" data-value="red">
                       <input type="radio" name="size" id="size-7" checked>
                       <label for="size-7">7</label>
@@ -86,21 +116,21 @@
                 <div class="qty_product">
                   <div class="input_qty">
                     <input type="text" id="qty_product_item" class="input_qty_product" value="1" min="1" aria-label="quantity" pattern="[0-9]*" name="quantity">
-                    <button type="button" class="qty_minus" aria-label="Quitar uno a la cantidad de artículos">
+                    <button type="button" id="qtyMinus" class="qty_minus" aria-label="Quitar uno a la cantidad de artículos">
                       <span class="text_minus" aria-hidden="true">−</span>
                     </button>
-                    <button type="button" class="qty_plus" aria-label="Aumentar uno a la cantidad de artículos">
+                    <button type="button" id="qtyPlus" class="qty_plus" aria-label="Aumentar uno a la cantidad de artículos">
                         <span class="text_plus" aria-hidden="true">+</span>
                     </button>
                   </div>
                   <div class="total_product">
-                    <p>Total price: <span>$570.00</span></p>
+                    <p>Total price: <span id="price_total">$570.00</span></p>
                   </div>
                 </div>
               </div>
               <div class="action_product">
                 <button type="button" class="btn_secondary">Add to favorite</button>
-                <button type="submit" class="btn_primary">Add to cart</button>
+                <button type="submit" id="submit_add_to_cart" class="btn_primary">Add to cart</button>
               </div>
             </form>
             <div class="description_product">
@@ -113,10 +143,12 @@
     <div id="popup_product" class="popup_addtocart_wrapper hidden_popup">
       <div class="box_container_popup">
         <p>Titulo y variación</p>
-        <div class="close_popup"><span>x</span></div>
+        <div class="close_popup" id="close_pop_up"><span>x</span></div>
       </div>
       <div class="overlay_popup"></div>
     </div>
   </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="assents/js/script.js"></script>
 </body>
 </html>

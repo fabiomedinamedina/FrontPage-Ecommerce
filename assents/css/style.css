@@ -126,6 +126,8 @@ a{
 .breadcrum_product_container .breadcrum {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrum_product_container .breadcrum .breadcrum_item,
@@ -151,7 +153,94 @@ a{
   color: var(--c-primary-middle);
 }
 
+.container_product{
+  margin-top: 2rem;
+}
+
+/* PRODUCT SLIDER */
+
+.slider_product_container{
+  padding-right: 2rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.full_slide {
+  height: 80%;
+  width: 100%;
+}
+
+.thumbs_slide {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+  margin-top: 1rem;
+}
+
+.thumbs_slide .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.thumbs_slide .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* PRODUCT INFORMATION */
+
+.information_product_container{
+  padding-left: 2rem;
+}
 
 .information_product_container .vendor_product,
 .information_product_container .vendor_product p,
@@ -366,11 +455,12 @@ label[data-color="black"]{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 .popup_addtocart_wrapper .overlay_popup{
