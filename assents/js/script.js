@@ -55,10 +55,8 @@ const fillOptionsAttributes = (options) => {
 
 const fillSliderProduct = (images) => {
   const sliderWrapper = [...document.getElementsByClassName('swiper-wrapper')];
-  console.log(sliderWrapper);
   
   let htmlSlider = '';
-  console.log(images);
   
   images.forEach((img) => {
 
