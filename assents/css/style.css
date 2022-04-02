@@ -475,11 +475,11 @@ label[data-color="black"]{
 .popup_addtocart_wrapper .box_container_popup{
   position: relative;
   text-align: center;
-  max-width: 35rem;
+  max-width: 60rem;
   min-width: 30rem;
   z-index: 900;
   background: #FFF;
-  padding: 2rem;
+  padding: 3rem;
   box-shadow: 0.4rem 0.4rem 1rem rgba(0,0,0,0.2);
 }
 
@@ -498,4 +498,23 @@ label[data-color="black"]{
 
 .popup_addtocart_wrapper .box_container_popup .close_popup span{
   color: #fff;
+}
+
+.popup_addtocart_wrapper .box_container_popup .content_popup h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.popup_addtocart_wrapper .box_container_popup .content_popup ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup_addtocart_wrapper .box_container_popup .content_popup ul li:not(:last-child):after{
+  content: '|';
+  padding: 0 1rem;
 }
