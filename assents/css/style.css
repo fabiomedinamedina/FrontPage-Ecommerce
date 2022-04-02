@@ -1,0 +1,154 @@
+/*
+    Project: GradiWeb Test
+    Develop: Fabio Medina Medina
+    Develop URI: https://www.fabiomedina.com
+    Date: April 2022
+    Location: Tunja, Colombia
+    ------ COLORS & FONT ------
+    --c-primary: #000;
+    --c-primary-middle: #E1E1E1;
+    --c-primary-light: #F3F3F3;
+    --f-primary: 'Poppins', sans-serif;
+*/
+
+:root {
+  --c-primary: #000;
+  --c-primary-middle: #6e6e6e;
+  --c-primary-light: #F3F3F3;
+  --f-primary: 'Poppins', sans-serif;
+  --f-regular: 400;
+  --f-medium: 500;
+  --f-bold: 700;
+}
+
+/* GENERALS */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* Now 10px = 1rem! */
+}
+
+body{
+  background: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--f-primary);
+  text-transform: none;
+  margin: 0;
+  line-height: 1;
+}
+
+a,
+a:visited,
+p,
+span,
+ul li,
+ol li,
+input,
+td,
+address {
+  color: var(--c-primary);
+  font-family: var(--f-primary);
+  font-size: 1.6rem;
+  font-weight: var(--f-regular);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+*,
+a,
+input,
+mark,
+li,
+img,
+svg,
+span,
+p,
+button {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--c-primary);
+}
+
+#main{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+/* BREADCRUM */
+
+.breadcrum_product_container .breadcrum {
+  list-style: none;
+  display: flex;
+}
+
+.breadcrum_product_container .breadcrum .breadcrum_item,
+.breadcrum_product_container .breadcrum .breadcrum_item a {
+  font-size: 1.4rem;
+}
+
+.breadcrum_product_container .breadcrum .breadcrum_item {
+  font-weight: var(--f-bold);
+}
+
+.breadcrum_product_container .breadcrum .breadcrum_item a {
+  color: var(--c-primary-middle);
+}
+
+.breadcrum_product_container .breadcrum .breadcrum_item:not(:last-child):after{
+  content: '/';
+  padding: 0 1rem;
+  color: var(--c-primary-middle);
+}
+
+/* PRODUCT INFORMATION */
+
+.information_product_container .vendor_product,
+.information_product_container .vendor_product p,
+.information_product_container .vendor_product a {
+  color: var(--c-primary-middle);
+  font-size: 1.2rem;
+}
+
+.information_product_container .title_product,
+.information_product_container .title_product h1{
+  font-size: 3rem;
+  font-weight: var(--f-bold);
+}
+
+.information_product_container .price_product,
+.information_product_container .price_product p {
+  font-size: 2.5rem;
+  font-weight: var(--f-medium);
+}
+
+.information_product_container .price_product span {
+  color: var(--c-primary-middle);
+  font-size: 1.8rem;
+}
